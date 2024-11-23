@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}Моє резюме{% endblock %}
+
+{% block content %}
+    <h1 class="mb-4">Моє резюме</h1>
+
+    <section id="about" class="mb-5 hover_shadow">
+        <div class="card p-3">
+            <div class="card-body">
+                <h2 class="card-title">Про мене</h2>
+                <ul class="list-group-flush">
+                    <li><strong>Прізвище та Ім'я  :</strong> Клімух Максим</li>
+                    <li><strong>Вік:</strong> 19 років</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="mb-5 hover_shadow">
+        <div class="card p-3">
+            <div class="card-body">
+                <h2 class="card-title">Освіта</h2>
+                <ul class="list-group-flush">
+                    <li><strong>Вища освіта:</strong> ПНУ ім. Василя Стефаника, 121 Інженерія програмного забезпечення.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="mb-5 hover_shadow">
+        <div class="card p-3">
+            <div class="card-body">
+                <h2 class="card-title">Навички</h2>
+                <ul class="list-group-flush">
+                    <li>Програмування мовою Python</li>
+                    <li>Тестування на проникнення</li>
+                    <li>Торгівля на валютних ринках</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="mb-5 hover_shadow">
+        <div class="card p-3">
+            <div class="card-body">
+                <h2 class="card-title">Досвід роботи</h2>
+                <p>Стажування</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="photo text-center mb-5">
+        <img src="{{ url_for('static', filename='images/cat_image.jpg') }}" alt="Фото кота" width="300px">
+    </section>
+{% endblock %}
