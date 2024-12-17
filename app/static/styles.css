@@ -1,59 +1,110 @@
-* {
+/* Глобальні стилі */
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
     line-height: 1.6;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+/* Заголовки */
+h1, h2, h3 {
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
-nav ul {
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+/* Навігаційна панель */
+.navbar {
+    background-color: #343a40;
+    padding: 0.75rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
     list-style: none;
-    padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #444;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li {
-    margin: 0 15px;
+.navbar li {
+    margin: 0 1.5rem;
 }
 
-nav ul li a {
-    color: white;
+.navbar a {
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    color: #ffffff;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
-    background-color: #555;
+.navbar a:hover {
+    color: #d1d1d1;
 }
 
-main {
-    padding: 2rem;
-    background-color: #f4f4f4;
-}
-
-section {
-    margin-bottom: 2rem;
+/* Основний контейнер */
+.container {
+    max-width: 1100px;
+    margin: 2rem auto;
     padding: 1rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Блоки у вигляді карток */
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Заголовок карток */
+.card h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+/* Текст усередині карток */
+.card p, .card ul {
+    margin: 0;
+    padding: 0.5rem 0;
+    color: #555;
+}
+
+/* Список у картках */
+.card ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+/* Footer */
 footer {
+    background-color: #343a40;
+    color: #f8f9fa;
     text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
+    padding: 1rem 0;
+    margin-top: 2rem;
 }
